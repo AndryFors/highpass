@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>High Pass — фотостудия</title>
+  <meta name="description" content="Фотостудия High Pass в Москве. Фотопроекты, мастер-классы и контакты студии.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">
+        <img src="assets/logo.svg" width="191" height="31" alt="High Pass">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#about">О студии</a>
+        <a href="#projects">Наши проекты</a>
+        <a href="#request">Услуги</a>
+        <a href="#masterclass">Мастер-классы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="icon-button search-toggle" type="button" popovertarget="search" aria-label="Открыть поиск">
+        <span class="icon icon--search" aria-hidden="true"></span>
+      </button>
+      <div class="search-panel" id="search" popover>
+        <input type="search" aria-label="Поиск по странице" placeholder="Что будем искать?">
+        <button class="icon-button" type="button" popovertarget="search" popovertargetaction="hide" aria-label="Закрыть поиск">
+          <span class="icon icon--close" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-bar">
+      <div class="container">
+        <a class="icon-button" href="#mobile-menu" aria-label="Открыть меню">
+          <span class="icon icon--menu" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+      <a class="icon-button" href="#top" aria-label="Закрыть меню">
+        <span class="icon icon--close" aria-hidden="true"></span>
+      </a>
+      <a href="#about">О студии</a>
+      <a href="#projects">Наши проекты</a>
+      <a href="#request">Услуги</a>
+      <a href="#masterclass">Мастер-классы</a>
+      <a href="#contacts">Контакты</a>
+      <a class="phone mobile-menu__phone" href="tel:+749542423532">+7 495 424-23-532</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="masterclass" aria-labelledby="hero-title">
+      <div class="hero__feature">
+        <picture class="cover">
+          <source media="(max-width: 767px)" srcset="assets/hero-camera-320.jpg">
+          <img src="assets/hero-camera.jpg" width="630" height="630" alt="">
+        </picture>
+        <span class="tag">#мастеркласс</span>
+        <div class="hero__copy">
+          <p>Мастер-класс от Игоря Робова</p>
+          <h1 id="hero-title">Неоновый фотосет 2.0<br>7 июля 20:00</h1>
+          <a class="button" href="#request">Узнать больше</a>
+        </div>
+      </div>
+      <div class="gallery">
+        <h2>Работы участников предыдущего мастер-класса</h2>
+        <div class="gallery__photos">
+          <picture class="gallery__main">
+            <source media="(max-width: 767px)" srcset="assets/hero-grid1768.jpg">
+            <img src="assets/hero-girl-1.jpg" width="630" height="300" alt="Портрет девушки у голубой неоновой вывески">
+          </picture>
+          <img src="assets/hero-girl-2.jpg" width="300" height="257" alt="Портрет в красном неоновом свете">
+          <img src="assets/hero-girl-3.jpg" width="300" height="257" alt="Портрет на фоне разноцветных вывесок">
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">О студии</h2>
+        <div class="about__columns">
+          <p class="about__text">В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.</p>
+          <div>
+            <picture class="about__photo">
+              <source media="(max-width: 767px)" srcset="assets/about-camera-320.jpg">
+              <img src="assets/about__cam.jpg" width="630" height="255" alt="Фотоаппарат Canon" loading="lazy">
+            </picture>
+            <h3 class="form-title">Подписаться на рассылку</h3>
+            <form class="newsletter" action="#newsletter-status">
+              <input class="field" type="email" placeholder="Email" aria-label="Email для рассылки" autocomplete="email" required>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+            <p class="form-status" id="newsletter-status">Демонстрационная форма. Подписка не оформлена.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Наши проекты</h2>
+      <ul class="projects__grid">
+        <li class="project">
+          <div class="project__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/projects__scenery-320.jpg">
+              <img src="assets/projects__scenery.jpg" width="190" height="184" alt="Река и горы на закате" loading="lazy">
+            </picture>
+            <span class="tag">#пейзаж</span>
+          </div>
+          <p>Синтетически, смешаны с не уникальными данными до степени...</p>
+          <time datetime="06-16">16 июня</time>
+        </li>
+        <li class="project">
+          <div class="project__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/projects__portrait-320.jpg">
+              <img src="assets/projects__portrait.jpg" width="190" height="184" alt="Чёрно-белый портрет мужчины в профиль" loading="lazy">
+            </picture>
+            <span class="tag">#портрет</span>
+          </div>
+          <p>В своём стремлении улучшить опыт мы упускаем, что явные...</p>
+          <time datetime="05-28">28 мая</time>
+        </li>
+        <li class="project">
+          <div class="project__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/projects__figures-320.jpg">
+              <img src="assets/projects__figures.jpg" width="190" height="184" alt="Керамика и сухая ветка" loading="lazy">
+            </picture>
+            <span class="tag">#предмет</span>
+          </div>
+          <p>Равным образом, высокое качество позиционных...</p>
+          <time datetime="05-14">14 мая</time>
+        </li>
+        <li class="project project--feature">
+          <picture class="cover">
+            <source media="(max-width: 767px)" srcset="assets/projects__fuji-320.jpg">
+            <img src="assets/projects__fuji.jpg" width="630" height="300" alt="" loading="lazy">
+          </picture>
+          <span class="tag">#fuji</span>
+          <time datetime="04-09">9 апреля</time>
+          <h3>Семантический разбор</h3>
+          <p>В рамках спецификации современных стандартов, интерактивные прототипы</p>
+          <button class="button button--outline" type="button" popovertarget="fuji">О проекте</button>
+        </li>
+        <li class="project project--retouch">
+          <div class="project__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/projects__retouch-320.jpg">
+              <img src="assets/projects__retouch.jpg" width="300" height="184" alt="Натюрморт с апельсинами" loading="lazy">
+            </picture>
+            <span class="tag">#ретушь</span>
+          </div>
+          <p>Как принято считать, многие известные личности и по сей день остаются уделом либералов...</p>
+          <time class="date--desktop" datetime="03-09">9 марта</time>
+          <time class="date--phone" datetime="05-28">28 мая</time>
+        </li>
+        <li class="project project--portrait">
+          <div class="project__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/projects__portrait-2-320.jpg">
+              <img src="assets/projects__portrait-2.jpg" width="300" height="184" alt="Чёрно-белый портрет девушки" loading="lazy">
+            </picture>
+            <span class="tag">#портрет</span>
+          </div>
+          <p>С учётом сложившейся международной обстановки, новая модель организационной...</p>
+          <time class="date--desktop" datetime="03-01">1 марта</time>
+          <time class="date--phone" datetime="05-14">14 мая</time>
+        </li>
+        <li class="project project--feature project--oblivion">
+          <picture class="cover">
+            <source media="(max-width: 767px)" srcset="assets/projects__oblivion-320.jpg">
+            <img src="assets/projects__oblivion.jpg" width="630" height="300" alt="" loading="lazy">
+          </picture>
+          <span class="tag">#проектзабвение</span>
+          <time datetime="03-20">20 марта</time>
+          <h3>Забвение</h3>
+          <p>Играет важную роль в формировании глубокомысленных рассуждений</p>
+          <button class="button button--outline" type="button" popovertarget="oblivion">О проекте</button>
+        </li>
+      </ul>
+
+      <article class="project-preview" id="fuji" popover aria-labelledby="fuji-title">
+        <button class="icon-button" type="button" popovertarget="fuji" popovertargetaction="hide" aria-label="Закрыть проект">
+          <span class="icon icon--close" aria-hidden="true"></span>
+        </button>
+        <img src="assets/projects__fuji.jpg" width="630" height="300" alt="Портрет за ветвями" loading="lazy">
+        <h3 id="fuji-title">Семантический разбор</h3>
+        <p>В рамках спецификации современных стандартов, интерактивные прототипы</p>
+      </article>
+      <article class="project-preview" id="oblivion" popover aria-labelledby="oblivion-title">
+        <button class="icon-button" type="button" popovertarget="oblivion" popovertargetaction="hide" aria-label="Закрыть проект">
+          <span class="icon icon--close" aria-hidden="true"></span>
+        </button>
+        <img src="assets/projects__oblivion.jpg" width="630" height="300" alt="Ледяной берег под тёмным небом" loading="lazy">
+        <h3 id="oblivion-title">Забвение</h3>
+        <p>Играет важную роль в формировании глубокомысленных рассуждений</p>
+      </article>
+    </section>
+
+    <section class="contacts container" id="contacts" aria-labelledby="contacts-title">
+      <h2 id="contacts-title">Контакты</h2>
+      <div class="contacts__columns">
+        <div class="map">
+          <img class="map__image" src="assets/map.jpg" width="850" height="460" alt="" loading="lazy">
+          <a class="map__pin" href="https://yandex.ru/maps/?text=Москва%2C%20Даев%20переулок%2C%2041" aria-label="Открыть адрес студии на карте"></a>
+          <details class="map__info" open>
+            <summary class="icon-button" aria-label="Показать или скрыть адрес студии">
+              <span class="icon icon--close" aria-hidden="true"></span>
+            </summary>
+            <div class="map__address">
+              <h3 class="form-title">Студия «High pass»</h3>
+              <address>107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82</address>
+              <a class="phone" href="tel:+749542423532">+7 495 424-23-532</a>
+            </div>
+          </details>
+        </div>
+        <div class="request" id="request">
+          <h3 class="form-title">Оставить заявку</h3>
+          <p>Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки или другого мероприятия</p>
+          <form class="request__form" action="#request-status">
+            <input class="field" type="text" placeholder="Имя" aria-label="Имя" autocomplete="name" required>
+            <input class="field" type="email" placeholder="Email" aria-label="Email" autocomplete="email" required>
+            <textarea class="field" placeholder="Комментарий" aria-label="Комментарий" required></textarea>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          <p class="form-status" id="request-status">Демонстрационная форма. Заявка не отправлена.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="logo" href="#top">
+          <img src="assets/logo.svg" width="191" height="31" alt="High Pass">
+        </a>
+        <p>Фотостудия High pass® 2018–2020</p>
+      </div>
+      <blockquote class="footer__quote">
+        «Которая из моих фотографий самая любимая? Та, которую я собираюсь снять завтра».<br>
+        <cite>© Имоджен Каннингем</cite>
+      </blockquote>
+      <div class="footer__social">
+        <p>Больше интересного:</p>
+        <div class="footer__links">
+          <a href="https://ok.ru/" aria-label="Одноклассники"><img src="assets/ok.svg" width="30" height="30" alt=""></a>
+          <a href="https://vk.com/" aria-label="ВКонтакте"><img src="assets/vk.svg" width="30" height="30" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
